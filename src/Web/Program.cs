@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.eShopWeb;
 using Microsoft.eShopWeb.ApplicationCore.Interfaces;
@@ -65,8 +67,13 @@ builder.Services.AddMvc(options =>
 {
     options.Conventions.Add(new RouteTokenTransformerConvention(
              new SlugifyParameterTransformer()));
-
 });
+builder.Services.Configure<RazorPagesOptions>(options =>
+{
+    options.RootDirectory = "/";
+    options.Conventions.AddPageRoute("/Catalog/Index", "");
+});
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages(options =>
 {
@@ -168,6 +175,7 @@ app.UseEndpoints(endpoints =>
     //endpoints.MapBlazorHub("/admin");
     endpoints.MapFallbackToFile("index.html");
 });
+
 
 app.Logger.LogInformation("Seeding Database...");
 

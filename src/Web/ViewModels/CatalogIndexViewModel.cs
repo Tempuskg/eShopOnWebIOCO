@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.eShopWeb.Web.Catalog;
 
 namespace Microsoft.eShopWeb.Web.ViewModels;
 

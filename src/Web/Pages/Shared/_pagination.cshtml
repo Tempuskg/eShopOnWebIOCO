@@ -1,4 +1,4 @@
-﻿@model PaginationInfoViewModel
+﻿@model Microsoft.eShopWeb.Web.ViewModels.PaginationInfoViewModel
 @{
     var prevRouteData = Context.Request.Query.ToDictionary(x => x.Key, x => x.Value.ToString());
     if (prevRouteData.ContainsKey("pageId"))
