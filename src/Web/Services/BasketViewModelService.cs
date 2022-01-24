@@ -5,19 +5,19 @@ using Microsoft.eShopWeb.ApplicationCore.Entities;
 using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
 using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 using Microsoft.eShopWeb.ApplicationCore.Specifications;
+using Microsoft.eShopWeb.Web.Basket;
 using Microsoft.eShopWeb.Web.Interfaces;
-using Microsoft.eShopWeb.Web.Pages.Basket;
 
 namespace Microsoft.eShopWeb.Web.Services;
 
 public class BasketViewModelService : IBasketViewModelService
 {
-    private readonly IRepository<Basket> _basketRepository;
+    private readonly IRepository<ApplicationCore.Entities.BasketAggregate.Basket> _basketRepository;
     private readonly IUriComposer _uriComposer;
     private readonly IBasketQueryService _basketQueryService;
     private readonly IRepository<CatalogItem> _itemRepository;
 
-    public BasketViewModelService(IRepository<Basket> basketRepository,
+    public BasketViewModelService(IRepository<ApplicationCore.Entities.BasketAggregate.Basket> basketRepository,
         IRepository<CatalogItem> itemRepository,
         IUriComposer uriComposer,
         IBasketQueryService basketQueryService)
@@ -43,7 +43,7 @@ public class BasketViewModelService : IBasketViewModelService
 
     private async Task<BasketViewModel> CreateBasketForUser(string userId)
     {
-        var basket = new Basket(userId);
+        var basket = new ApplicationCore.Entities.BasketAggregate.Basket(userId);
         await _basketRepository.AddAsync(basket);
 
         return new BasketViewModel()
@@ -77,7 +77,7 @@ public class BasketViewModelService : IBasketViewModelService
         return items;
     }
 
-    public async Task<BasketViewModel> Map(Basket basket)
+    public async Task<BasketViewModel> Map(ApplicationCore.Entities.BasketAggregate.Basket basket)
     {
         return new BasketViewModel()
         {

@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.Web.Catalog;
 using Microsoft.eShopWeb.Web.Interfaces;
 using Microsoft.eShopWeb.Web.ViewModels;
 
-namespace Microsoft.eShopWeb.Web.Pages.Basket;
+namespace Microsoft.eShopWeb.Web.Basket;
 
 public class IndexModel : PageModel
 {
