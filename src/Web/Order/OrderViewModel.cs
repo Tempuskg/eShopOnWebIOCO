@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
+﻿using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
+using Microsoft.eShopWeb.Web.ViewModels;
 
-namespace Microsoft.eShopWeb.Web.ViewModels;
+namespace Microsoft.eShopWeb.Web.Order;
 
 public class OrderViewModel
 {

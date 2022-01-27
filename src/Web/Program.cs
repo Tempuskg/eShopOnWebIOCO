@@ -73,7 +73,10 @@ builder.Services.Configure<RazorPagesOptions>(options =>
     options.RootDirectory = "/";
     options.Conventions.AddPageRoute("/Catalog/Index", "");
 });
-
+builder.Services.Configure<RazorViewEngineOptions>(options =>
+{
+    options.ViewLocationFormats.Add("/Order/{0}" + RazorViewEngine.ViewExtension);
+});
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages(options =>
 {

@@ -5,15 +5,16 @@ using MediatR;
 using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
 using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 using Microsoft.eShopWeb.ApplicationCore.Specifications;
+using Microsoft.eShopWeb.Web.Order;
 using Microsoft.eShopWeb.Web.ViewModels;
 
 namespace Microsoft.eShopWeb.Web.Features.OrderDetails;
 
 public class GetOrderDetailsHandler : IRequestHandler<GetOrderDetails, OrderViewModel>
 {
-    private readonly IReadRepository<Order> _orderRepository;
+    private readonly IReadRepository<ApplicationCore.Entities.OrderAggregate.Order> _orderRepository;
 
-    public GetOrderDetailsHandler(IReadRepository<Order> orderRepository)
+    public GetOrderDetailsHandler(IReadRepository<ApplicationCore.Entities.OrderAggregate.Order> orderRepository)
     {
         _orderRepository = orderRepository;
     }
