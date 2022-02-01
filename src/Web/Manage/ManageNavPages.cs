@@ -1,8 +1,7 @@
-﻿using System;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
-namespace Microsoft.eShopWeb.Web.Views.Manage;
+namespace Microsoft.eShopWeb.Web.Manage;
 
 public static class ManageNavPages
 {

@@ -76,6 +76,7 @@ builder.Services.Configure<RazorPagesOptions>(options =>
 builder.Services.Configure<RazorViewEngineOptions>(options =>
 {
     options.ViewLocationFormats.Add("/Order/{0}" + RazorViewEngine.ViewExtension);
+    options.ViewLocationFormats.Add("/Manage/{0}" + RazorViewEngine.ViewExtension);
 });
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages(options =>
