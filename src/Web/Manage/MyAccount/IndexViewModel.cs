@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Microsoft.eShopWeb.Web.ViewModels.Manage;
+namespace Microsoft.eShopWeb.Web.Manage.MyAccount;
 
 public class IndexViewModel
 {
