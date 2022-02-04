@@ -9,6 +9,7 @@ using Microsoft.eShopWeb.Infrastructure.Identity;
 using Microsoft.eShopWeb.Web.Manage.ChangePassword;
 using Microsoft.eShopWeb.Web.Manage.EnableAuthenticator;
 using Microsoft.eShopWeb.Web.Manage.ExternalLogins;
+using Microsoft.eShopWeb.Web.Manage.GenerateRecoveryCodes;
 using Microsoft.eShopWeb.Web.Manage.MyAccount;
 using Microsoft.eShopWeb.Web.Manage.TwoFactorAuthentication;
 using Microsoft.eShopWeb.Web.Services;
@@ -490,7 +491,7 @@ public class ManageController : Controller
             throw new ApplicationException($"Cannot generate recovery codes for user with ID '{user.Id}' because they do not have 2FA enabled.");
         }
 
-        return View(nameof(GenerateRecoveryCodesWarning));
+        return View();
     }
 
     private void AddErrors(IdentityResult result)

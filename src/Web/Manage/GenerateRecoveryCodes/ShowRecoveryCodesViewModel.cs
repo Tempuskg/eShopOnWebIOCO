@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopWeb.Web.ViewModels.Manage;
+﻿namespace Microsoft.eShopWeb.Web.Manage.GenerateRecoveryCodes;
 
 public class ShowRecoveryCodesViewModel
 {
