@@ -8,6 +8,7 @@ using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 using Microsoft.eShopWeb.Infrastructure.Identity;
 using Microsoft.eShopWeb.Web.Manage.ChangePassword;
 using Microsoft.eShopWeb.Web.Manage.MyAccount;
+using Microsoft.eShopWeb.Web.Manage.TwoFactorAuthentication;
 using Microsoft.eShopWeb.Web.Services;
 using Microsoft.eShopWeb.Web.ViewModels.Manage;
 
