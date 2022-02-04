@@ -83,6 +83,7 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>
     options.ViewLocationFormats.Add("/Manage/EnableAuthenticator/{0}" + RazorViewEngine.ViewExtension);
     options.ViewLocationFormats.Add("/Manage/ResetAuthenticatorWarning/{0}" + RazorViewEngine.ViewExtension);
     options.ViewLocationFormats.Add("/Manage/Disable2faWarning/{0}" + RazorViewEngine.ViewExtension);
+    options.ViewLocationFormats.Add("/Manage/ExternalLogins/{0}" + RazorViewEngine.ViewExtension);
 });
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages(options =>
