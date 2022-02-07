@@ -11,10 +11,10 @@ using Microsoft.eShopWeb.Web.Manage.EnableAuthenticator;
 using Microsoft.eShopWeb.Web.Manage.ExternalLogins;
 using Microsoft.eShopWeb.Web.Manage.GenerateRecoveryCodes;
 using Microsoft.eShopWeb.Web.Manage.MyAccount;
+using Microsoft.eShopWeb.Web.Manage.RemoveLogin;
 using Microsoft.eShopWeb.Web.Manage.SetPassword;
 using Microsoft.eShopWeb.Web.Manage.TwoFactorAuthentication;
 using Microsoft.eShopWeb.Web.Services;
-using Microsoft.eShopWeb.Web.ViewModels.Manage;
 
 namespace Microsoft.eShopWeb.Web.Manage;
 
