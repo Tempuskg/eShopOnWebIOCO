@@ -87,6 +87,7 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>
     options.ViewLocationFormats.Add("/Manage/GenerateRecoveryCodes/{0}" + RazorViewEngine.ViewExtension);
     options.ViewLocationFormats.Add("/Manage/GenerateRecoveryCodesWarning/{0}" + RazorViewEngine.ViewExtension);
     options.ViewLocationFormats.Add("/Manage/SetPassword/{0}" + RazorViewEngine.ViewExtension);
+    options.ViewLocationFormats.Add("/Manage/RemoveLogin/{0}" + RazorViewEngine.ViewExtension);
 });
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages(options =>
