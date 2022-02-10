@@ -92,7 +92,7 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages(options =>
 {
-    options.Conventions.AuthorizePage("/Basket/Checkout");
+    options.Conventions.AuthorizePage("/Basket/Checkout/Checkout");
 });
 builder.Services.AddHttpContextAccessor();
 builder.Services

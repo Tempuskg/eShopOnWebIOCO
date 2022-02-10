@@ -8,7 +8,7 @@ using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 using Microsoft.eShopWeb.Infrastructure.Identity;
 using Microsoft.eShopWeb.Web.Interfaces;
 
-namespace Microsoft.eShopWeb.Web.Basket.Checkout;
+namespace Microsoft.eShopWeb.Web.Basket;
 
 [Authorize]
 public class CheckoutModel : PageModel
