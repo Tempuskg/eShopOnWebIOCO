@@ -1,7 +1,4 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
-using Microsoft.eShopWeb.Web.Basket;
-
-namespace Microsoft.eShopWeb.Web.Interfaces;
+﻿namespace Microsoft.eShopWeb.Web.Basket;
 
 public interface IBasketViewModelService
 {

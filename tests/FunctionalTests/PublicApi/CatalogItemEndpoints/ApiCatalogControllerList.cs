@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.eShopWeb.FunctionalTests.PublicApi;
+using Microsoft.eShopWeb.Web.Catalog;
 using Microsoft.eShopWeb.Web.ViewModels;
 using Xunit;
 

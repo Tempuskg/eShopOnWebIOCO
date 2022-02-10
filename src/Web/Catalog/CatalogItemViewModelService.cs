@@ -1,11 +1,7 @@
-﻿using System.Threading.Tasks;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
+﻿using Microsoft.eShopWeb.ApplicationCore.Entities;
 using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.Web.Catalog;
-using Microsoft.eShopWeb.Web.Interfaces;
-using Microsoft.eShopWeb.Web.ViewModels;
 
-namespace Microsoft.eShopWeb.Web.Services;
+namespace Microsoft.eShopWeb.Web.Catalog;
 
 public class CatalogItemViewModelService : ICatalogItemViewModelService
 {

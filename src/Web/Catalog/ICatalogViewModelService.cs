@@ -1,9 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.eShopWeb.Web.ViewModels;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace Microsoft.eShopWeb.Web.Services;
+namespace Microsoft.eShopWeb.Web.Catalog;
 
 public interface ICatalogViewModelService
 {

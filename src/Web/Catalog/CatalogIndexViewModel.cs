@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.eShopWeb.Web.Catalog;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.eShopWeb.Web.ViewModels;
 
-namespace Microsoft.eShopWeb.Web.ViewModels;
+namespace Microsoft.eShopWeb.Web.Catalog;
 
 public class CatalogIndexViewModel
 {
