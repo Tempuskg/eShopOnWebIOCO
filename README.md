@@ -17,6 +17,8 @@ I refactored most of the Web project code into the following top level folders o
 8. User
 
 These folders were based on the URL, for example Manage comes from https://localhost:44315/manage/my-account, or the page title in the case of Catalog which is the default page and has just the site url https://localhost:44315/
-In the process I removed the Extensions, Interfaces, Pages, and Services folders. 
+In the process I removed the Extensions, Interfaces, Pages, Services, ViewModels\Manage, Views\Manage, and Views\Order folders. 
 
 I left the Areas folder because it is hard coded in the .NET source code and can't be customized.
+
+I left the Account code as I didn't think it would be possible to change, I would be happy to be proven wrong.
