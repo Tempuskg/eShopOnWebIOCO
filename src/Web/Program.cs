@@ -75,7 +75,9 @@ builder.Services.Configure<RazorPagesOptions>(options =>
 });
 builder.Services.Configure<RazorViewEngineOptions>(options =>
 {
-    options.ViewLocationFormats.Add("/Order/{0}" + RazorViewEngine.ViewExtension);
+    options.AreaPageViewLocationFormats.Add("/Basket/Components/Basket/Default" + RazorViewEngine.ViewExtension);
+    options.PageViewLocationFormats.Add("/Basket/Components/Basket/Default" + RazorViewEngine.ViewExtension);
+    options.ViewLocationFormats.Add("/Basket/{0}" + RazorViewEngine.ViewExtension);
     options.ViewLocationFormats.Add("/Manage/{0}" + RazorViewEngine.ViewExtension);
     options.ViewLocationFormats.Add("/Manage/MyAccount/{0}" + RazorViewEngine.ViewExtension);
     options.ViewLocationFormats.Add("/Manage/ChangePassword/{0}" + RazorViewEngine.ViewExtension);
@@ -88,6 +90,7 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>
     options.ViewLocationFormats.Add("/Manage/GenerateRecoveryCodesWarning/{0}" + RazorViewEngine.ViewExtension);
     options.ViewLocationFormats.Add("/Manage/SetPassword/{0}" + RazorViewEngine.ViewExtension);
     options.ViewLocationFormats.Add("/Manage/RemoveLogin/{0}" + RazorViewEngine.ViewExtension);
+    options.ViewLocationFormats.Add("/Order/{0}" + RazorViewEngine.ViewExtension);
 });
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages(options =>
