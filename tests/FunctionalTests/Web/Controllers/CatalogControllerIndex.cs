@@ -14,7 +14,6 @@ public class CatalogControllerIndex : IClassFixture<TestApplication>
 
     public HttpClient Client { get; }
 
-    //TODO:djm get this test passing
     [Fact]
     public async Task ReturnsHomePageWithProductListing()
     {

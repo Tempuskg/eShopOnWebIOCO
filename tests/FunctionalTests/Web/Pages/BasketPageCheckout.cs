@@ -65,7 +65,7 @@ public class BasketPageCheckout : IClassFixture<TestApplication>
         formContent = new FormUrlEncodedContent(keyValues);
         var postResponse2 = await Client.PostAsync("/Basket/Checkout", formContent);
         var requestUriString = postResponse2.RequestMessage.RequestUri.ToString();
-        //TODO:djm get this working
+        
         Assert.Contains("/Identity/Account/Login", requestUriString);
     }
 }
