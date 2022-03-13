@@ -21,4 +21,4 @@ In the process I removed the Extensions, Interfaces, Pages, Services, ViewModels
 
 I left the Areas folder because it is hard coded in the .NET source code and can't be customized.
 
-I left the Account code as I didn't think it would be possible to change, I would be happy to be proven wrong.
+I left the Account code as I didn't think it would be easy to change.
